@@ -1,0 +1,18 @@
+- [Communicating Sequential Processes](https://book.douban.com/subject/1424200/)
+- The Theory and Practice of Concurrency
+  - 前两本讲的是 CSP 理论（1985 版），前者是对理论的阐述，后者是对理论更好的解释。读这两本书的主要目的是为了了解 Go 所借鉴的 CSP 并发模式究竟是何方神圣，其次目的还在于希望通过形式逻辑理解并发编程。网上很多人只闻其声不问其人，Rob Pike 提到 Go 受到了 CSP 的启发，其实理论上并没有借鉴 CSP 1985，相反，而是 1978 年的早期论文，早年 CSP 理论还没有提出 channel 这一通讯实体，也是诸多“谣言”之一。
+- [Concurrent Programming: Algorithms, Principles, and Foundations](https://book.douban.com/subject/11537928/)
+- [Distributed Algorithms for Message-Passing Systems](https://book.douban.com/subject/25780441/)
+- Fault-Tolerant Message-Passing Distributed Systems: An Algorithmic Approach
+  - 这三本书的作者是同一人，是个法国老头。我最初注意到这个学者是因为第一本书，当时在图书馆闲逛，发现了第一本书。后来顺手读了第一章，感觉写作思路非常流畅，主要讨论的是共享对象的并发编程，前半部分讨论传统的互斥，后半部分讨论的是原子操作。后来借了此书之后又来来回回读了几次，发现这书只是该作者出版过关于分布式系统的系列书籍的一本之一。后来发现了第二本和第三本。第二本讨论的内容基于系统无障碍的假设，因此很多内容在实际实践中并没有提供太多价值，只在理论的完整性上提供了支持。很多分布式领域初学者以为分布式可能比并发编程来得复杂，其实不然，一组互相通信的进程同样组成一个分布式系统，一组进程中的部分进程同样可能面临故障，他们之间的一致性同样需要共识技术。所以第三本书弥补了这个主题的缺失，以系统故障、超时和网络问题为主要场景讨论存在的分布式算法，是我目前发现结合了最新科研成果的一本书了。
+- Compilers: Principles, Techniques, and Tools
+  - 龙书，无须多言。这本书其实早在本科三年级的时候读过很大一部分内容，如今又重新拾起来，发现今年接触的很多技术都在这本书里有或多或少提及，当年没有认真读完，真是惭愧。
+- The Garbage Collection Handbook: The Art of Automatic Memory Management
+  - 垃圾回收届的龙书。没有全书读完，认真读过了关于标记清扫和并发标记清扫等相关内容。这本书是我少有的很遗憾没有在本科时期读到过的书之一，原因可能是本科期间主攻的语言是 C 和 C++，曾对垃圾回收嗤之以鼻，后来写 Obj-C 和 Swift 的时候只接触过引用计数式垃圾回收，了解其局限性，也并没有深入了解过垃圾回收这一主题，现在想来真是无知。
+- Scheduling: Theory, Algorithms, and Systems
+  - 也许是调度届的龙书，暂时没有找到比这本书更加全面的讨论关于调度的书了。没有全书读完，认真读过了一些关于调度算法的分析技巧，并重点读了动态随机实时调度的内容。
+- Quantum Computing: A Gentle Introduction
+  - 本科时期物理课上对量子力学尤其感兴趣，一直想学习量子计算，苦于没有机会。这本书没有读完，前半部分成功让我理解了 Qubit 系统和状态变换的测量理论，整套理论依托于一些基本的概率论假设，书中的例子也是一些非常简单的矩阵变换。确实非常的“Gentle”。
+- [UNIX Systems for Modern Architectures: Symmetric Multiprocessing and Caching for Kernel Programmers](https://book.douban.com/subject/1819828/)
+- Is Parallel Programming Hard, And, If So, What Can You Do About It?
+  - 这两本书被我归在一起，前者是讨论缓存的具体设计，后者则讨论缓存成为实践中考虑的重要因素之一。当然，后者讨论的主要内容是并行编程，如果说前面的 Concurrent Programming 是纯理论类的书籍，而这本书里则更侧重实践。此外，Parallel 和 Concurrent 并不是同一个概念，因此实际内容也有一定的差异。我很喜欢这本书的写作风格：在一段内容结束后增加多个问题，来确保读者确实已经理解了前面所说的内容
